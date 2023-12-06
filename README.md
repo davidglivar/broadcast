@@ -1,22 +1,17 @@
-# create-svelte
+# Broadcast
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+A companion web application for twitch streamers.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Clone this project: 
+
+```
+git clone https://github.com/davidglivar/broadcast.git
+cd broadcast
+```
+
+Once you've cloned the project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
@@ -35,4 +30,18 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## OBS Scenes
+
+With this application, you'll be able to add Browser sources in OBS pointing to localhost routes. Here is a list of routes and how they work:
+
+### localhost:5678/brb
+
+- [ ] Check "refresh browser when scene becomes active"
+- [ ] Set URL to localhost:5678/brb
+- [ ] Set width and height to output of stream
+
+### localhost:5678/countdown
+
+- [ ] Check "refresh browser when scene becomes active"
+- [ ] Set URL to localhost:5678/countdown
+- [ ] Set width and height to output of stream
