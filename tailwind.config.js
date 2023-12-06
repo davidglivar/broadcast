@@ -4,7 +4,14 @@ import daisyui from 'daisyui';
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        sans: ['Noto Sans', 'sans-serif']
+      }
+    }
   },
-  plugins: [daisyui]
+  plugins: [daisyui],
+  daisyui: {
+    themes: ['light']
+  }
 };
