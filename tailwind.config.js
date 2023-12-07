@@ -1,17 +1,12 @@
-import daisyui from 'daisyui';
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Noto Sans', 'sans-serif']
+        sans: ['Noto Sans', 'sans-serif'],
+        mono: ['Fira Mono', 'monospace']
       }
     }
-  },
-  plugins: [daisyui],
-  daisyui: {
-    themes: ['light']
   }
 };
