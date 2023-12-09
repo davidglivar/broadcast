@@ -1,10 +1,9 @@
-<script>
+<script lang="ts">
   import Container from '$lib/components/Container.svelte';
   import { stringify } from '$lib/utils/json';
-
   let payload = stringify({
-    message: 'Be right back',
-    reason: 'forbidden'
+    message: 'See you later',
+    reason: 'timeout'
   });
 </script>
 
