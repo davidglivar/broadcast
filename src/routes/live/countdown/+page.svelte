@@ -10,9 +10,9 @@
 
   let seconds = countdown_minutes * 60;
   $: millis = seconds * 1000;
+  $: formatted = formatDuration(millis);
   $: payload = stringify({
-    seconds,
-    formatted: formatDuration(millis)
+    message: `Starting in ${formatted}`
   });
 
   let timeout: NodeJS.Timeout;
@@ -25,6 +25,6 @@
   });
 </script>
 
-<Container class="items-center justify-center">
-  <pre class="flex text-xl">{payload}</pre>
+<Container>
+  <pre>{payload}</pre>
 </Container>
