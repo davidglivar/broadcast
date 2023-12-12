@@ -17,3 +17,25 @@
   @apply bg-zinc-800;
   @apply text-zinc-300;
 }
+
+.hljs.hideBorder {
+  display: none;
+}
+
+.hljs-attr {
+  @apply text-zinc-500;
+}
+
+.hljs-string {
+  @apply text-purple-400;
+}
+
+.hljs-number {
+  @apply text-emerald-400;
+}
+
+.hljs tr td:last-child {
+  padding: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
