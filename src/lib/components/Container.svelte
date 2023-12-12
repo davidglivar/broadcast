@@ -4,7 +4,7 @@
 </script>
 
 <section
-  class="container min-h-full h-full min-w-full flex flex-col flex-1 items-start justify-start {className}"
+  class="container min-h-full h-full min-w-full flex flex-col flex-1 items-start justify-start text-xl {className}"
 >
   <slot />
 </section>
